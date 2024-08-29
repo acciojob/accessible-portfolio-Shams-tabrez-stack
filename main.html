@@ -1,16 +1,48 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Portfolio</title>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+
+    <!-- Navigation with ARIA role -->
+    <nav role="navigation" aria-label="Main navigation">
+        <ul role="list">
+            <li role="listitem"><a href="#about">About</a></li>
+            <li role="listitem"><a href="#projects">Projects</a></li>
+            <li role="listitem"><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main content -->
+    <main>
+
+        <!-- About section -->
+        <section id="about">
+            <h1 role="heading">About Me</h1>
+            <p>Hello! I am a web developer with a passion for creating accessible and user-friendly websites.</p>
+            <img role="img" src="unnamed.jpg" alt="Profile picture of [Your Name]">
+        </section>
+
+        <!-- Projects section -->
+        <section id="projects">
+            <h1 role="heading">Projects</h1>
+            <ul role="list">
+                <li role="listitem">Project 1: A web application for task management</li>
+                <li role="listitem">Project 2: An e-commerce website for handmade crafts</li>
+                <li role="listitem">Project 3: A personal blog platform</li>
+            </ul>
+        </section>
+
+        <!-- Contact section -->
+        <section id="contact">
+            <h1 role="heading">Contact Me</h1>
+            <p>You can reach me via email at <a href="mailto:youremail@example.com">youremail@example.com</a>.</p>
+        </section>
+
+    </main>
 
 </body>
-
 </html>
